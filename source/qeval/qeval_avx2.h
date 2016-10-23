@@ -21,7 +21,10 @@ class QEvalAVX2 : public QEval {
 		inline void score(const uint64_t*, uint32_t*, uint64_t) const final;
 		
 		QEvalAVX2();
+		QEvalAVX2(const QEvalAVX2&);
 		~QEvalAVX2();
+		
+		QEvalAVX2& operator=(const QEvalAVX2&);
 		
 private:
 		//Single processing methods
